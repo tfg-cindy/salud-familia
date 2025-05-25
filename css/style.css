@@ -1,0 +1,113 @@
+
+/* Root */
+:root {
+    --negro-profundo: #f0fffb;
+    --gris-oscuro: #bee9fd;
+    --azul-oscuro: #1F3C73;
+    --verde-musgo: #4C7B5A;
+    --blanco-suave: #000000;
+    --naranja-calido: #1c1cff;
+    --morado-brillante: #e962cc;
+    --fuente-cinzel: 'Open Sans', sans-serif;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;  /* Evita la selección de imagenes y href, evito molestias al usuario */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--negro-profundo);
+    color: var(--blanco-suave);
+    line-height: 1.6;
+    color: black;
+}
+
+/* Encabezado */
+.main-header {
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--gris-oscuro);
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid black;
+}
+
+.main-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-header h1 {
+    font-family: var(--fuente-cinzel);
+    color: var(--blanco-suave);
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+}
+
+.barra a {
+    color: var(--blanco-suave);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.barra a:hover {
+    color: var(--naranja-calido);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0-2s;
+}
+
+/* Footer */
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #9ac5c2;
+    color: var(--blanco-suave);
+    font-size: 0.9rem;
+}
+
+.logoPrincipal{
+    width: 8%;
+    height: 8%;
+    min-width: 70px;
+}
+
+
+@media (max-width: 700px) {
+    .botones-href{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .botones-href a{
+        margin: 5px;
+    }
+    
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-header{
+        flex-direction: column;
+    }
+}
+

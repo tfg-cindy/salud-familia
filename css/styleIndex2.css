@@ -1,0 +1,115 @@
+.intro-section {
+    position: relative;
+    background-image: url(../imagenes/dientesD.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 100px 20px;
+    filter: brightness(0.8); /* Filtro para oscurecer ligeramente */
+    animation: fadeIn 1s ease;
+}
+
+.intro-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease;
+    color: black;
+}
+
+.intro-description {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--blanco-suave);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    background-color: var(--gris-oscuro);
+    border-radius: 25px;
+    opacity: 0.8;
+    padding: 40px;
+}
+
+.cta-button {
+    font-family: var(--fuente-cinzel);
+    background-color: #54e5ff;
+    color: #0B0B0D;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0-2s;
+}
+
+.cta-button:hover {
+    background-color: #1c1cff;
+    color: #E5E5E5;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+a{
+    text-decoration: none;
+    font-family: var(--fuente-cinzel);
+}
+
+main{
+    justify-content: center;
+    justify-items: center;
+}
+
+.selectorJfs {
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+.selectorJfs h2 {
+    font-family: var(--fuente-cinzel);
+    font-size: 2rem;
+    color: var(--blanco-suave);
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgIzquierda, .imgDerecha   {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+.textoPersonajes {
+    padding: 25px;
+    margin: 5px;
+    flex: 1;
+    text-align: justify;
+    background-color: var(--gris-oscuro);
+    width: 100%;
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+.textoPersonajes a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .hrImg{
+        width: 100%;
+    }
+    .contenido{
+        flex-direction: column;
+    }
+}
