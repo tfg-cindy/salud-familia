@@ -111,3 +111,21 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+  .barra {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales en la primera fila */
+    grid-template-rows: auto auto; /* dos filas */
+    gap: 10px;
+    padding: 10px 0;
+    justify-items: center; /* centra horizontalmente el texto en cada celda */
+  }
+
+  .barra a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: none; /* quitar borde si no quieres */
+  }
+}
