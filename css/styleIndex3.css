@@ -115,12 +115,36 @@ main{
 }
 
 .carousel-container {
-    max-width: 800px;
-    margin: 2rem auto;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px 0;
 }
 
-.carousel-item video {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.carousel-image {
+  width: 100%;
+  height: 400px; /* Ajusta este valor a lo que desees */
+  object-fit: cover; /* Usa 'contain' si no quieres que recorte nada */
+  border-radius: 10px;
+}
+
+/* Botones personalizados */
+.custom-carousel-btn-prev,
+.custom-carousel-btn-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.custom-carousel-btn-prev {
+  left: 15px;
+}
+
+.custom-carousel-btn-next {
+  right: 15px;
 }
